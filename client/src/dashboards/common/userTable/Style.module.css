@@ -1,0 +1,33 @@
+.wrapper {
+  padding: 40px;
+  background: #f5f6fa;
+  min-height: 60vh;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color:#444444d9;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+  color:#444444d9;
+}
+
+th {
+  background: #6b3cc9;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f1f1f1;
+}

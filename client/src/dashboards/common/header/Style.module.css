@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background: white;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+    color:#444444d9;
+
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.nav a {
+  cursor: pointer;
+}
+
+.highlight {
+  color: #6b3cc9;
+  font-weight: 600;
+}
+
+.signupBtn {
+  background: #6b3cc9;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
