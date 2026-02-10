@@ -2,23 +2,26 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Style.module.css";
 import CreateUserModal from "../../../crud/create/CreateUserModal";
+import { useDispatch } from "react-redux";
+import { resetAuthState } from "../../../redux/slices/authSlice";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
-
+  const dispatch = useDispatch();
   const user = JSON.parse(localStorage.getItem("user"));
-  const role = user?.role; // ✅ get role
+  const role = user?.role;
 
   function handleLogout() {
     localStorage.clear();
-    navigate("/login");
+    dispatch(resetAuthState());
+    navigate("/login", { replace: true });
   }
-  
+
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.logo}>Ship Cause</div>
+        <div className={styles.logo}>Welcome, {user.name}</div>
 
         <nav className={styles.nav}>
           <a>About</a>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { login, resetAuthState } from "../../redux/slices/authSlice";
@@ -75,7 +76,7 @@ useEffect(() => {
         </form>
 
         <p className={styles.footerText}>
-          Don’t have an account? <span>Sign Up</span>
+          Don’t have an account? <Link to="/register">Register</Link>
         </p>
       </div>
     </div>

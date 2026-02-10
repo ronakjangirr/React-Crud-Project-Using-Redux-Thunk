@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className={styles.copy}>© 2023 Ship Cause</p>
+      <p className={styles.copy}>© 2025 CREST MERN Project</p>
     </footer>
   );
 };

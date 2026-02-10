@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { register, resetAuthState } from "../../redux/slices/authSlice";
 import styles from "./Style.module.css";
@@ -73,7 +74,8 @@ const Register = () => {
                 </form>
 
                 <p className={styles.footerText}>
-                    Already have an account? <span>Login</span>
+                    Already have an account? <Link to="/login">Login</Link>
+
                 </p>
             </div>
         </div>
